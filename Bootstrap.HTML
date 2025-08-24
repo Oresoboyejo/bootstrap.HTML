@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html>
+    <head>
+    </head>
     <body>
-
-
-
-        <h1 id="myH"></h1>
-        <p id="myP"></p>
-        <h1>javascript variablaes</h1>
-        <p>sum of two numbers</p>
-        <p id="result"></p>
-
-
+        <p>a function can access variables defined inside the function:
+        </p>
+        <button onclick="myFunction(5)">Execute JS function</button>
+        <p id="demo"></p>
+        <p id="demo1"></p>
         <script>
-            // My heading:
-            document.getElementById("myH").innerHTML ="javascript comments";
-            // My paragraph
-            document.getElementById("myP").innerHTML ="My first paragraph";
-            
-            var num1=5;
-            var num2=6;
-            var sum= num1 + num2;
-            document.getElementById(result).innerHTML ="The total sum is: " + sum;
+
+
+            var b=5
+            function myfunction(){
+                var a=4;
+                document.getElementById("demo").innerHTML = b*a
+            }
+            document.getElementById("demo1").innerHTML = a;
+            document.getElementById("demo1").innerHTML = b;
         </script>
+        
     </body>
 </html>
